@@ -1,26 +1,19 @@
-import { Card, Container, CardContent, Typography } from "@material-ui/core"
+import {Container} from "@material-ui/core"
 import React from "react"
+import BasicInfo from "./components/basicInfo"
+import Skills from "./components/skills"
+import Experience from "./components/experience"
+import Education from "./components/education"
+import About from "./components/about"
 
 const App = () => {
   return (
       <Container maxWidth="lg">
-        <Card>       
-          <CardContent>
-          <Typography>Basic info</Typography>
-        </CardContent>
-        <CardContent>
-          <Typography>Skills</Typography>
-        </CardContent>
-        <CardContent>
-          <Typography>Work experience</Typography>
-        </CardContent>
-        <CardContent>
-          <Typography>Education</Typography>
-        </CardContent>
-        <CardContent>
-          <Typography>About me</Typography>
-        </CardContent>
-        </Card>
+        <BasicInfo />
+        <Skills />
+        <Experience />
+        <Education />
+        <About />
       </Container>
   )
 }
