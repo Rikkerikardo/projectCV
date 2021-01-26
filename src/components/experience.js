@@ -1,6 +1,7 @@
 import { Card, CardContent, Paper, Typography } from "@material-ui/core"
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@material-ui/lab"
 
+//TODO: secondary timeline
 const Experience = () => {
 
     return (
