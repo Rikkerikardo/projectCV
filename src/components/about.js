@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, CardContent, Grid, Typography } from "@material-ui/core"
+import { Card, CardContent, Grid, Typography, Box } from "@material-ui/core"
 
 const AboutMe = () => {
   const birthDate = new Date(1995, 4, 22)
@@ -11,9 +11,18 @@ const AboutMe = () => {
 
   return (
     <Grid item xs={12}>
-      <Card>
+      <Card style={{ height: "100%" }}>
         <CardContent>
-          <Typography variant="h5">About Me</Typography>
+          <Box
+            style={{
+              background: "linear-gradient(315deg, #a6a6a6 0%, #ececec 45%)",
+            }}
+            borderRadius={15}
+            padding={1}
+            width={0.1}
+          >
+            <Typography variant="h5">About Me</Typography>
+          </Box>
           <Typography>
             {age}-year old easily to approach guy from Joensuu. Lived there for
             the first 17 years of my life, moved then to Hämeenlinna in 2012.

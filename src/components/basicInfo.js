@@ -1,12 +1,21 @@
 import React from "react"
-import { Card, CardContent, Grid, Typography } from "@material-ui/core"
+import { Box, Card, CardContent, Grid, Typography } from "@material-ui/core"
 
 const BasicInfo = () => {
   return (
     <Grid item xs={12}>
-      <Card>
+      <Card style={{ height: "100%" }}>
         <CardContent>
-          <Typography variant="h5">Basic info</Typography>
+          <Box
+            style={{
+              background: "linear-gradient(315deg, #a6a6a6 0%, #ececec 45%)",
+            }}
+            borderRadius={15}
+            padding={1}
+            width={0.1}
+          >
+            <Typography variant="h5">Basic info</Typography>
+          </Box>
           <Typography variant="h6" align="center">
             Riku Pelkonen
           </Typography>

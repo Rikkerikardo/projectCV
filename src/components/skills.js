@@ -9,6 +9,7 @@ import {
   Divider,
   Collapse,
   Grid,
+  Box,
 } from "@material-ui/core"
 import React, { useState } from "react"
 
@@ -35,9 +36,18 @@ const Skills = () => {
 
   return (
     <Grid item xs={6}>
-      <Card>
+      <Card style={{ height: "100%" }}>
         <CardContent>
-          <Typography variant="h5">Skills</Typography>
+          <Box
+            style={{
+              background: "linear-gradient(315deg, #a6a6a6 0%, #ececec 45%)",
+            }}
+            borderRadius={15}
+            padding={1}
+            width={0.2}
+          >
+            <Typography variant="h5">Skills</Typography>
+          </Box>
           <Typography variant="h6" align="center">
             Programming
           </Typography>
