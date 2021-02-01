@@ -1,14 +1,21 @@
 import React from "react"
-import { Box, Card, CardContent, Grid, Typography } from "@material-ui/core"
+import {
+  Box,
+  Card,
+  CardContent,
+  Grid,
+  Typography,
+  Link,
+} from "@material-ui/core"
 
 const BasicInfo = () => {
   return (
     <Grid item xs={12}>
-      <Card style={{ height: "100%" }}>
+      <Card>
         <CardContent>
           <Box
             style={{
-              background: "linear-gradient(315deg, #a6a6a6 0%, #ececec 45%)",
+              textDecoration: "underline",
             }}
             borderRadius={15}
             padding={1}
@@ -31,6 +38,11 @@ const BasicInfo = () => {
           <Typography variant="h6" align="center">
             pelkonen.riku@gmail.com
           </Typography>
+          <Link href="https://github.com/Rikkerikardo">
+            <Typography variant="h6" align="center">
+              Github
+            </Typography>
+          </Link>
         </CardContent>
       </Card>
     </Grid>

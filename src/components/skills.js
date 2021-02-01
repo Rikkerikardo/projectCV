@@ -40,7 +40,7 @@ const Skills = () => {
         <CardContent>
           <Box
             style={{
-              background: "linear-gradient(315deg, #a6a6a6 0%, #ececec 45%)",
+              textDecoration: "underline",
             }}
             borderRadius={15}
             padding={1}
@@ -52,63 +52,99 @@ const Skills = () => {
             Programming
           </Typography>
           <List>
-            <ListItem button onClick={() => handleClick(0)}>
+            <ListItem
+              button
+              onClick={() => handleClick(0)}
+              style={{
+                background: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)",
+              }}
+            >
               <ListItemText primary="Javascript" align="center" />
             </ListItem>
             <Collapse in={first} timeout="auto" unmountOnExit>
               <List>
-                <ListItem>
-                  <Typography>
+                <ListItemText>
+                  Most significant technologies learned at school:
+                </ListItemText>
+                <List dense>
+                  <ListItemText>- React</ListItemText>
+                  <ListItemText>- Node.js</ListItemText>
+                  <ListItemText>- GraphQL</ListItemText>
+
+                  <ListItemText>
                     <Link href="https://fullstackopen.com/en/">
-                      - Fullstack / University of Helsinki (8 course credit, 5/5
-                      score)
+                      (Learned at Fullstack / University of Helsinki, 8 course
+                      credit, 5/5 score)
                     </Link>
-                    <br />
+                  </ListItemText>
+                  <ListItemText>
                     <Link href="https://github.com/Rikkerikardo/fullstack-websovelluskehitys2020">
-                      - (Github repository of course)
+                      (Github repository of course)
                     </Link>
-                  </Typography>
-                </ListItem>
+                  </ListItemText>
+                </List>
+                <Divider />
+                <ListItemText>
+                  Most significant technologies learned on my own:
+                </ListItemText>
+                <List dense={true}>
+                  <ListItemText>- Tensorflow JS</ListItemText>
+                </List>
               </List>
             </Collapse>
             <Divider />
-            <ListItem button onClick={() => handleClick(1)}>
+            <ListItem
+              button
+              onClick={() => handleClick(1)}
+              style={{
+                background: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)",
+              }}
+            >
               <ListItemText primary="Java" align="center" />
             </ListItem>
             <Collapse in={second} timeout="auto" unmountOnExit>
-              <List>
-                <ListItem>
-                  <Typography>
-                    <Link href="https://sisu.jyu.fi/student/courseunit/otm-5398e687-3268-48a3-b0a3-2d646f1a2b37/brochure">
-                      - Ohjelmointi 2 / University of Jyväskylä (8 course
-                      credit, 5/5 score)
-                    </Link>
-                    <br />
+              <List dense>
+                <ListItemText>
+                  <Link href="https://sisu.jyu.fi/student/courseunit/otm-5398e687-3268-48a3-b0a3-2d646f1a2b37/brochure">
+                    (Learned at Ohjelmointi 2 / University of Jyväskylä, 8
+                    course credit, 5/5 score)
+                  </Link>
+                  <ListItemText>
                     <Link href="https://gitlab.jyu.fi/pelkrpxt/ohj2">
-                      - (Gitlab repository of course)
+                      (Gitlab repository of course)
                     </Link>
-                  </Typography>
-                </ListItem>
+                  </ListItemText>
+                </ListItemText>
               </List>
             </Collapse>
             <Divider />
-            <ListItem button onClick={() => handleClick(2)}>
+            <ListItem
+              button
+              onClick={() => handleClick(2)}
+              style={{
+                background: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)",
+              }}
+            >
               <ListItemText primary="C#" align="center" />
             </ListItem>
             <Collapse in={third} timeout="auto" unmountOnExit>
-              <List>
-                <ListItem>
-                  <Typography>
-                    <Link href="https://sisu.jyu.fi/student/courseunit/jy-CU-9321-v2/brochure">
-                      - Ohjelmointi 1 / University of Jyväskylä (6 course
-                      credit, 5/5 score)
-                    </Link>
-                  </Typography>
-                </ListItem>
+              <List dense>
+                <ListItemText>
+                  <Link href="https://sisu.jyu.fi/student/courseunit/jy-CU-9321-v2/brochure">
+                    (Learned at Ohjelmointi 1 / University of Jyväskylä, 6
+                    course credit, 5/5 score)
+                  </Link>
+                </ListItemText>
+              </List>
+              <Divider />
+              <ListItemText>
+                Most significant technologies learned on my own:
+              </ListItemText>
+              <List dense={true}>
+                <ListItemText>- Selenium</ListItemText>
               </List>
             </Collapse>
           </List>
-
           <Typography variant="h6" align="center">
             Language
           </Typography>

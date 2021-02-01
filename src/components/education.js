@@ -35,7 +35,7 @@ const Education = () => {
         <CardContent>
           <Box
             style={{
-              background: "linear-gradient(315deg, #a6a6a6 0%, #ececec 45%)",
+              textDecoration: "underline",
             }}
             borderRadius={15}
             padding={1}
