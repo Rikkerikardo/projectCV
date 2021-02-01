@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 import React from "react"
 import BasicInfo from "./components/basicInfo"
 import Skills from "./components/skills"
@@ -8,13 +8,13 @@ import About from "./components/about"
 
 const App = () => {
   return (
-    <Container maxWidth="lg">
+    <Grid container spacing={5}>
       <BasicInfo />
       <Skills />
-      <Experience />
       <Education />
+      <Experience />
       <About />
-    </Container>
+    </Grid>
   )
 }
 
