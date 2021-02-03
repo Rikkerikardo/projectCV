@@ -60,14 +60,6 @@ const Experience = () => {
           >
             <Typography variant="h5">Timeline</Typography>
           </Box>
-          <Button
-            variant="outlined"
-            onClick={() => {
-              handleClick()
-            }}
-          >
-            Expand timeline
-          </Button>
 
           {expanded ? (
             <Timeline align="alternate">
@@ -321,6 +313,15 @@ const Experience = () => {
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
+              <Button
+                style={{ width: "25%", alignSelf: "center", marginTop: "3%" }}
+                variant="outlined"
+                onClick={() => {
+                  handleClick()
+                }}
+              >
+                Minimize timeline
+              </Button>
             </Timeline>
           ) : (
             <Timeline align="alternate">
@@ -403,6 +404,15 @@ const Experience = () => {
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
+              <Button
+                style={{ width: "25%", alignSelf: "center", marginTop: "3%" }}
+                variant="outlined"
+                onClick={() => {
+                  handleClick()
+                }}
+              >
+                Expand timeline
+              </Button>
             </Timeline>
           )}
         </CardContent>
