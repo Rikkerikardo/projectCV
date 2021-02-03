@@ -24,12 +24,16 @@ const AboutMe = () => {
             <Typography variant="h5">About Me</Typography>
           </Box>
           <Typography>
-            {age}-year old easily to approach guy from Joensuu. Lived there for
-            the first 17 years of my life, moved then to Hämeenlinna in 2012.
-            Finished high school in spring 2014 and performed national service
-            2014-2015. Started successful career at consumer sales 2015, moved
-            to Jyväksylä in 2017. Continued working to 2018 until studies
-            started.
+            {age}-year old approachable guy from Joensuu. In my free time, I do
+            a lots of different sports. Jogging, HIIT, bodyweight exercises and
+            cross-country skiing are my main ways to try keep myself fit. I also
+            play tennis, padel and badminton regulary for fun and I enjoy
+            competiting on those sports, in addition to just training. Movies,
+            series and videogames and other usual stuff are also of course part
+            of my interests. I had data-driven sports betting -project for a
+            couple of years, which took a big chunk of my time as well. During
+            that project I learned massively about coding and analytic thinking,
+            which I'm sure I can make use of in my future carer.
           </Typography>
         </CardContent>
       </Card>
