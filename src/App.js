@@ -10,7 +10,7 @@ import { makeStyles } from "@material-ui/core/styles"
 const useStyles = makeStyles({
   root: {
     background: "linear-gradient(160deg, #0093E9 0%, #80D0C7 60%)",
-    padding: "0 30px",
+    padding: "10px 30px",
   },
 })
 

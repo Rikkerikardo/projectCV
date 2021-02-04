@@ -47,7 +47,7 @@ const AboutMe = () => {
           </Grid>
           <Typography>
             {age}-year old approachable guy from Joensuu. In my free time, I do
-            a lots of different sports. Jogging, HIIT, bodyweight exercises and
+            lots of different sports. Jogging, HIIT, bodyweight exercises and
             cross-country skiing are my main ways to try keep myself fit. I also
             play tennis, padel and badminton regulary for fun and I enjoy
             competiting on those sports, in addition to just training. Movies,
@@ -55,7 +55,7 @@ const AboutMe = () => {
             of my interests. I had data-driven sports betting -project for a
             couple of years, which took a big chunk of my time as well. During
             that project I learned massively about coding and analytic thinking,
-            which I'm sure I can make use of in my future carer.
+            which I'm sure I can make use of in my future career.
           </Typography>
         </CardContent>
       </Card>

@@ -83,6 +83,14 @@ const Education = () => {
                 </ListItem>
               </List>
             </Collapse>
+            <Divider />
+            <Typography variant="h6">Language</Typography>
+            <ListItem>
+              <Typography>Finnish - Native</Typography>
+            </ListItem>
+            <ListItem>
+              <Typography>English - Proficient (C1/CEFR)</Typography>
+            </ListItem>
           </List>
         </CardContent>
       </Card>

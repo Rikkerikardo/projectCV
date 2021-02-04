@@ -147,11 +147,6 @@ const Skills = () => {
               </List>
             </Collapse>
           </List>
-          <Typography variant="h6" align="center">
-            Language
-          </Typography>
-          <Typography align="center">Finnish - Native</Typography>
-          <Typography align="center">English - Proficient (C1/CEFR)</Typography>
         </CardContent>
       </Card>
     </Grid>

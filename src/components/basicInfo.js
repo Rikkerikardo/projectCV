@@ -40,20 +40,23 @@ const BasicInfo = () => {
             <Typography variant="h6">
               <PhoneOutlined
                 fontSize="large"
-                style={{ verticalAlign: "-10px" }}
+                style={{ verticalAlign: "-10px", marginRight: "10px" }}
               ></PhoneOutlined>
               +358407468099
             </Typography>
             <Typography variant="h6">
               <EmailOutlined
                 fontSize="large"
-                style={{ verticalAlign: "-10px" }}
+                style={{ verticalAlign: "-10px", marginRight: "10px" }}
               ></EmailOutlined>
               pelkonen.riku@gmail.com
             </Typography>
             <Link href="https://github.com/Rikkerikardo">
               <Typography variant="h6">
-                <GitHub fontSize="large" style={{ verticalAlign: "-10px" }} />{" "}
+                <GitHub
+                  fontSize="large"
+                  style={{ verticalAlign: "-10px", marginRight: "10px" }}
+                />
                 Github
               </Typography>
             </Link>
