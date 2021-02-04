@@ -1,5 +1,11 @@
 import React from "react"
-import { Card, CardContent, Grid, Typography, Box } from "@material-ui/core"
+import { Card, CardContent, Grid, Typography } from "@material-ui/core"
+import {
+  DirectionsRunOutlined,
+  FitnessCenterOutlined,
+  SportsEsportsOutlined,
+  SportsTennisOutlined,
+} from "@material-ui/icons"
 
 const AboutMe = () => {
   const birthDate = new Date(1995, 4, 22)
@@ -13,16 +19,32 @@ const AboutMe = () => {
     <Grid item xs={12}>
       <Card style={{ height: "100%" }}>
         <CardContent>
-          <Box
-            style={{
-              textDecoration: "underline",
-            }}
-            borderRadius={15}
-            padding={1}
-            width={0.1}
-          >
-            <Typography variant="h5">About Me</Typography>
-          </Box>
+          <Grid container direction="row" alignItems="center">
+            <Typography
+              variant="h5"
+              style={{
+                textDecoration: "underline",
+              }}
+            >
+              About Me
+            </Typography>
+            <SportsTennisOutlined
+              fontSize="large"
+              style={{ marginLeft: "10px" }}
+            />
+            <SportsEsportsOutlined
+              fontSize="large"
+              style={{ marginLeft: "10px" }}
+            />
+            <DirectionsRunOutlined
+              fontSize="large"
+              style={{ marginLeft: "10px" }}
+            />
+            <FitnessCenterOutlined
+              fontSize="large"
+              style={{ marginLeft: "10px" }}
+            />
+          </Grid>
           <Typography>
             {age}-year old approachable guy from Joensuu. In my free time, I do
             a lots of different sports. Jogging, HIIT, bodyweight exercises and

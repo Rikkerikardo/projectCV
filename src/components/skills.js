@@ -9,8 +9,8 @@ import {
   Divider,
   Collapse,
   Grid,
-  Box,
 } from "@material-ui/core"
+import { TuneOutlined } from "@material-ui/icons"
 import React, { useState } from "react"
 
 const Skills = () => {
@@ -38,16 +38,18 @@ const Skills = () => {
     <Grid item xs={6}>
       <Card style={{ height: "100%" }}>
         <CardContent>
-          <Box
+          <Typography
+            variant="h5"
             style={{
               textDecoration: "underline",
             }}
-            borderRadius={15}
-            padding={1}
-            width={0.2}
           >
-            <Typography variant="h5">Skills</Typography>
-          </Box>
+            Skills
+            <TuneOutlined
+              fontSize="large"
+              style={{ verticalAlign: "-10px", marginLeft: "10px" }}
+            />
+          </Typography>
           <Typography variant="h6" align="center">
             Programming
           </Typography>

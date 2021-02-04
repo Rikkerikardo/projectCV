@@ -8,8 +8,8 @@ import {
   Divider,
   Collapse,
   Grid,
-  Box,
 } from "@material-ui/core"
+import { SchoolOutlined } from "@material-ui/icons"
 import React, { useState } from "react"
 
 const Education = () => {
@@ -33,16 +33,20 @@ const Education = () => {
     <Grid item xs={6}>
       <Card style={{ height: "100%" }}>
         <CardContent>
-          <Box
-            style={{
-              textDecoration: "underline",
-            }}
-            borderRadius={15}
-            padding={1}
-            width={0.2}
-          >
-            <Typography variant="h5">Education</Typography>
-          </Box>
+          <Grid container direction="row" alignItems="center">
+            <Typography
+              variant="h5"
+              style={{
+                textDecoration: "underline",
+              }}
+            >
+              Education
+              <SchoolOutlined
+                fontSize="large"
+                style={{ marginLeft: "10px", verticalAlign: "-10px" }}
+              />
+            </Typography>
+          </Grid>
           <List>
             <ListItem button onClick={() => handleClick(0)}>
               <Typography>

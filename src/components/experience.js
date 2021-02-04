@@ -5,7 +5,6 @@ import {
   Grid,
   Paper,
   Typography,
-  Box,
   Button,
 } from "@material-ui/core"
 import {
@@ -17,6 +16,7 @@ import {
   TimelineSeparator,
 } from "@material-ui/lab"
 import { makeStyles } from "@material-ui/core/styles"
+import { HistoryOutlined } from "@material-ui/icons"
 
 const useStyles = makeStyles({
   timelineHeading: {
@@ -50,17 +50,20 @@ const Experience = () => {
     <Grid item xs={12}>
       <Card style={{ height: "100%" }}>
         <CardContent>
-          <Box
-            style={{
-              textDecoration: "underline",
-            }}
-            borderRadius={15}
-            padding={1}
-            width={0.1}
-          >
-            <Typography variant="h5">Timeline</Typography>
-          </Box>
-
+          <Grid container direction="row" alignItems="center">
+            <Typography
+              variant="h5"
+              style={{
+                textDecoration: "underline",
+              }}
+            >
+              Timeline
+              <HistoryOutlined
+                fontSize="large"
+                style={{ verticalAlign: "-10px", marginLeft: "10px" }}
+              />
+            </Typography>
+          </Grid>
           {expanded ? (
             <Timeline align="alternate">
               <TimelineItem>

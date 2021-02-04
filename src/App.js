@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 const App = () => {
   const classes = useStyles()
   return (
-    <Grid container spacing={5} className={classes.root}>
+    <Grid container spacing={2} className={classes.root}>
       <BasicInfo />
       <Skills />
       <Education />
