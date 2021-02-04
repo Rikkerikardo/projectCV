@@ -2,6 +2,8 @@
 
 Single-page application for personal CV
 
+[https://rikkerikardo.github.io/projectCV/]
+
 ## Technologies
 
 - React 17.0.1
