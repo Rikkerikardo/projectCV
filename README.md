@@ -2,7 +2,7 @@
 
 Single-page application for personal CV
 
-[https://rikkerikardo.github.io/projectCV/]
+https://rikkerikardo.github.io/projectCV/
 
 ## Technologies
 
